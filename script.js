@@ -46,9 +46,9 @@ function pickFeaturedStation() {
     const featuredSection = document.getElementById("random-station");
     featuredSection.innerHTML = `
       <h3>${featuredStation.name}</h3>
+      <p>${featuredStation.description}</p>
       <p><strong>Location:</strong> ${featuredStation.location}</p>
-      <p><strong>Type:</strong> ${featuredStation.type}</p>
-    `;
+      <p><strong>Type:</strong> ${featuredStation.type}</p>`;
 
     window.addEventListener("DOMContentLoaded", pickFeaturedStation);
 }
